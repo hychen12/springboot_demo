@@ -34,22 +34,22 @@ public class Demo2ApplicationTests {
 
     }
 
-    @Test
-    public void testReidsObj() {
-        User u = new User("abc");
-        ValueOperations<String, User> operations = redisTemplate.opsForValue();
-        operations.set("usss",u);
-
-        Assert.assertEquals("usss", operations.get("usss").getName());
-
-    }
-
-    public class User implements Serializable {
-        private String name;
-        public User(String name){
-            this.name = name;
-        }
-        public String getName() {return name;}
-    }
+//    @Test
+//    public void testReidsObj() {
+//        User u = new User("abc");
+//        ValueOperations<String, User> operations = redisTemplate.opsForValue();
+//        operations.set("usss",u);
+//
+//        Assert.assertEquals("usss", operations.get("usss").getName());
+//
+//    }
+//
+//    public class User implements Serializable {
+//        private String name;
+//        public User(String name){
+//            this.name = name;
+//        }
+//        public String getName() {return name;}
+//    }
 
 }
