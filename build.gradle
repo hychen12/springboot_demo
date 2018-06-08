@@ -42,6 +42,11 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     // Use MySQL Connector-J
     compile 'mysql:mysql-connector-java'
+    // Redis
+    //compile 'org.springframework.boot:spring-boot-starter-data-redis'
+    compile 'org.springframework.boot:spring-boot-starter-redis'
+    compile 'redis.clients:jedis' //session-data-redis時要使用，不然會找不到RedisConnectionFactory
+    compile 'org.springframework.session:spring-session-data-redis'
     runtime('org.springframework.boot:spring-boot-devtools')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
